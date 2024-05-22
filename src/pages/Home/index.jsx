@@ -80,6 +80,7 @@ const NewProjectForm = ({ onAppend }) => {
           aria-describedby="titleHelp"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
+          required
         />
         <div id="titleHelp" className="form-text">
           Zadejte název projektu, který chcete vytvořit.
