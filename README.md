@@ -51,6 +51,7 @@ deno task start
 ## Git a GitHub
 ```
 /.gitignore         – konfigurace Gitu – které soubory se nemají ukládat do git repository
+/.github            – konfigurace GitHubu pro Deno Deploy – vytváří se automaticky při připojení projektu do Deno Deploy
 ```
 
 # Backend
