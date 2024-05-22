@@ -68,9 +68,9 @@ deno task start
     <dt>POST /api/projects</dt>
     <dd>Přidá nový projekt.</dd>
     <dt>PUT /api/projects/:id</dt>
-    <dd>Vrací údaje o konkrétním projektu.</dd>
+    <dd>Přepíše informace o konkrétním projektu.</dd>
     <dt>PATCH /api/projects/:id</dt>
-    <dd>Vrací údaje o konkrétním projektu.</dd>
+    <dd>Aktualizuje údaje o konkrétním projektu (zaslané informace přepíšou ty uložené, zbytek se ponechá beze změny).</dd>
     <dt>DELETE /api/projects/:id</dt>
     <dd>Smaže konkrétní projekt.</dd>
 </dl>
@@ -89,9 +89,9 @@ deno task start
     <dt>POST /api/tasks</dt>
     <dd>Přidá nový úkol.</dd>
     <dt>PUT /api/tasks/:id</dt>
-    <dd>Vrací údaje o konkrétním úkolu.</dd>
+    <dd>Přepíše údaje o konkrétním úkolu.</dd>
     <dt>PATCH /api/tasks/:id</dt>
-    <dd>Vrací údaje o konkrétním úkolu.</dd>
+    <dd>Aktualizuje údaje o konkrétním úkolu (zaslané informace přepíšou ty uložené, zbytek se ponechá beze změny).</dd>
     <dt>DELETE /api/tasks/:id</dt>
     <dd>Smaže konkrétní úkol.</dd>
 </dl>
