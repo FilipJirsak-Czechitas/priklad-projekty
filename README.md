@@ -150,4 +150,4 @@ Project Configuration:
 * Install Step: npm install
 * Build step: `npm run build`
 * Root directory: `dist`
-* Entry point: `/api/main.js`
+* Entry point: `./api/main.js`
