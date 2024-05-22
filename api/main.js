@@ -17,6 +17,6 @@ if (Deno.env.has("CORS_ORIGIN")) {
     }));
 }
 app.route("/api", api);
-app.get('*', serveStatic({ root: './dist/' }));
+app.get('*', serveStatic({ root: './' }));
 
 export default app
