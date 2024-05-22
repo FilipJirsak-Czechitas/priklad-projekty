@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "czechitas-priklad-projekty"
-          entrypoint: "/api/main.js"
+          entrypoint: "./api/main.js"
           root: "dist"
