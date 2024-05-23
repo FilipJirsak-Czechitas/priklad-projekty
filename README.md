@@ -46,6 +46,10 @@ Server (backend+frontend):
 deno task start
 ```
 
+# Nástroje a knihovny použité na backendu
+* Javascriptový runtime [Deno](https://deno.com)
+* Serverový framework pro web [Hono](https://hono.dev)
+* Knihovna pro ukládání JSON dokumentů do kolekcí [RESTful Collections](https://jsr.io/@czechitas/restful-collections)
 
 # Struktura projektu
 
