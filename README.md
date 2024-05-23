@@ -4,6 +4,31 @@
 npm install
 ```
 
+# Použití v jiném projektu
+
+1. Založit si projekt pomocí `npm init kodim-app@latest <nazev-projektu> react`.
+1. Upravit soubor `package.json` – v objektu `scripts` nahradit řádek s `build` následujícími třemi řádky:
+    ```
+    "build:vite": "vite build",
+    "build:api": "copyfiles api/* deno.* dist/",
+    "build": "npm run build:vite && npm run build:api",
+    ```
+1. Vytvořit soubor `/.env.local` (pozor na tečku na začátku – na MacOS a Linuxu je takový soubor standardně skrytý) s následujícím obsahem:
+    ```shell
+    CORS_ORIGIN=http://localhost:5173
+    ```
+1. Zkopírovat do svého projektu následující soubory z tohoto projektu:
+    ```
+    /deno.json
+    /src/.env.development
+    ```
+1. Vytvořit si adresář `/api` a v něm soubor s kódem serveru (v konfiguraci `deno.json` se předpokládá, že to bude soubor `/api/main.js`).
+1. Při volání `fetch` v klientském kódu používat následující konstrukci pro zjištění adresy serveru, např.:
+    ```javascript
+    const API_URL = import.meta.env.VITE_API_URL ?? "/api";
+    const response = await fetch(`${API_URL}/projects`);
+    ```
+
 # Spuštění
 
 Lokální vývoj – frontend (startuje na http://localhost:5173):
