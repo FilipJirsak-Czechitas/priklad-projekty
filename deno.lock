@@ -3,7 +3,8 @@
   "packages": {
     "specifiers": {
       "jsr:@czechitas/restful-collections@^0.1.0": "jsr:@czechitas/restful-collections@0.1.0",
-      "jsr:@std/ulid@0.224.0": "jsr:@std/ulid@0.224.0"
+      "jsr:@std/ulid@0.224.0": "jsr:@std/ulid@0.224.0",
+      "npm:@types/node": "npm:@types/node@18.16.19"
     },
     "jsr": {
       "@czechitas/restful-collections@0.1.0": {
@@ -15,9 +16,18 @@
       "@std/ulid@0.224.0": {
         "integrity": "1b5622ac78ccdbca72dd8da40b2b3b29e6062e1eb3267973f2e60e871e6683de"
       }
+    },
+    "npm": {
+      "@types/node@18.16.19": {
+        "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
+        "dependencies": {}
+      }
     }
   },
   "remote": {
+    "https://deno.land/std@0.224.0/dotenv/mod.ts": "0180eaeedaaf88647318811cdaa418cc64dc51fb08354f91f5f480d0a1309f7d",
+    "https://deno.land/std@0.224.0/dotenv/parse.ts": "09977ff88dfd1f24f9973a338f0f91bbdb9307eb5ff6085446e7c423e4c7ba0c",
+    "https://deno.land/std@0.224.0/dotenv/stringify.ts": "275da322c409170160440836342eaa7cf012a1d11a7e700d8ca4e7f2f8aa4615",
     "https://deno.land/x/hono@v4.3.7/adapter/deno/serve-static.ts": "db226d30f08f1a8bb77653ead42a911357b2f8710d653e43c01eccebb424b295",
     "https://deno.land/x/hono@v4.3.7/client/client.ts": "dcda3887257fa3164db7b32c56665c6e757f0ef047a14f3f9599ef41725c1525",
     "https://deno.land/x/hono@v4.3.7/client/index.ts": "30def535310a37bede261f1b23d11a9758983b8e9d60a6c56309cee5f6746ab2",
@@ -110,6 +120,7 @@
         "npm:@types/react@^18.2.15",
         "npm:@vitejs/plugin-react@^4.0.3",
         "npm:bootstrap@^5.3.3",
+        "npm:copyfiles@^2.4.1",
         "npm:dayjs@^1.11.11",
         "npm:react-dom@^18.2.0",
         "npm:react-router-dom@^6.23.1",

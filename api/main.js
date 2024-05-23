@@ -1,5 +1,6 @@
 import { Hono } from "@hono";
 import { cors, serveStatic } from "@hono/middleware";
+import { load } from "@dotenv";
 import { RESTfulCollections } from "@czechitas/restful-collections";
 
 const api = await new RESTfulCollections()
@@ -11,9 +12,10 @@ const api = await new RESTfulCollections()
 
 const app = new Hono();
 
-if (Deno.env.has("CORS_ORIGIN")) {
+const env = await load();
+if (env["CORS_ORIGIN"]) {
     app.use("/api/*", cors({
-        origin: Deno.env.has("CORS_ORIGIN").split(/, */),
+        origin: env["CORS_ORIGIN"].split(/, */),
     }));
 }
 app.route("/api", api);

@@ -13,13 +13,10 @@ npm install
     "build:api": "copyfiles api/* deno.* dist/",
     "build": "npm run build:vite && npm run build:api",
     ```
-1. Vytvořit soubor `/.env.local` (pozor na tečku na začátku – na MacOS a Linuxu je takový soubor standardně skrytý) s následujícím obsahem:
-    ```shell
-    CORS_ORIGIN=http://localhost:5173
-    ```
 1. Zkopírovat do svého projektu následující soubory z tohoto projektu:
     ```
     /deno.json
+    /.env.defaults
     /src/.env.development
     ```
 1. Vytvořit si adresář `/api` a v něm soubor s kódem serveru (v konfiguraci `deno.json` se předpokládá, že to bude soubor `/api/main.js`).
@@ -73,8 +70,8 @@ deno task start
 /api                – zdrojové kódy backendu (JS)
 /deno.lock          – fixované verze balíčků pro Deno
 /deno.json          – konfigurace Deno (může být také deno.jsonc)
-/.env               - proměnné prostředí pro backend
-/.env.*             - proměnné prostředí pro backend
+/.env               - proměnné prostředí pro backend pro lokální vývoj – předefinování výchozích hodnot (soubor nemusí existovat a není v Gitu).
+/.env.defaults      - proměnné prostředí pro backend pro lokální vývoj – výchozí hodnoty
 ```
 
 ## Git a GitHub
