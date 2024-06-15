@@ -50,11 +50,11 @@ export const appendTask = async (task) => {
 };
 
 export const listAllTasks = async (projectId) => {
-  const response = await fetch(`${API_URL}/tasks/${projectId}/`);
+  const response = await fetch(`${API_URL}/tasks/by-project/${projectId}/`);
   return await response.json();
 };
 
 export const listDayTasks = async (projectId, date) => {
-  const response = await fetch(`${API_URL}/tasks/${projectId}/${date}`);
+  const response = await fetch(`${API_URL}/tasks/by-project/${projectId}/${date}`);
   return await response.json();
 };

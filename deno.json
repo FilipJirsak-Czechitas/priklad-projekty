@@ -4,7 +4,7 @@
     "start": "deno serve  --unstable-kv --allow-read api/main.js"
   },
   "imports": {
-    "@czechitas/restful-collections": "jsr:@czechitas/restful-collections@^0.1.0",
+    "@czechitas/restful-collections": "jsr:@czechitas/restful-collections@^0.2.0",
     "@hono": "https://deno.land/x/hono@v4.3.7/mod.ts",
     "@hono/middleware": "https://deno.land/x/hono@v4.3.7/middleware.ts",
     "@hono/http-exception": "https://deno.land/x/hono@v4.3.7/http-exception.ts",

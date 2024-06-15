@@ -2,19 +2,24 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@czechitas/restful-collections@^0.1.0": "jsr:@czechitas/restful-collections@0.1.0",
-      "jsr:@std/ulid@0.224.0": "jsr:@std/ulid@0.224.0",
+      "jsr:@czechitas/restful-collections@^0.2.0": "jsr:@czechitas/restful-collections@0.2.0",
+      "jsr:@hono/hono@^4.4.0": "jsr:@hono/hono@4.4.6",
+      "jsr:@std/ulid@^0.224.1": "jsr:@std/ulid@0.224.1",
       "npm:@types/node": "npm:@types/node@18.16.19"
     },
     "jsr": {
-      "@czechitas/restful-collections@0.1.0": {
-        "integrity": "ef5faa73ef3b12236d15a2fc05fdd19f109f2fd098426c47ea07d99b045b9dd7",
+      "@czechitas/restful-collections@0.2.0": {
+        "integrity": "9288d902524505496a07c5ba4fc0b3d1852c567e3ae11f70c876c7b69770dd17",
         "dependencies": [
-          "jsr:@std/ulid@0.224.0"
+          "jsr:@hono/hono@^4.4.0",
+          "jsr:@std/ulid@^0.224.1"
         ]
       },
-      "@std/ulid@0.224.0": {
-        "integrity": "1b5622ac78ccdbca72dd8da40b2b3b29e6062e1eb3267973f2e60e871e6683de"
+      "@hono/hono@4.4.6": {
+        "integrity": "aa557ca9930787ee86b9ca1730691f1ce1c379174c2cb244d5934db2b6314453"
+      },
+      "@std/ulid@0.224.1": {
+        "integrity": "4de06fdb030ff3990b1b0344e330373c11ce6051ac449fc435667a485a6723fa"
       }
     },
     "npm": {
@@ -112,7 +117,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@czechitas/restful-collections@^0.1.0"
+      "jsr:@czechitas/restful-collections@^0.2.0"
     ],
     "packageJson": {
       "dependencies": [
