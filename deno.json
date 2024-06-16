@@ -5,9 +5,7 @@
   },
   "imports": {
     "@czechitas/restful-collections": "jsr:@czechitas/restful-collections@^0.2.0",
-    "@hono": "https://deno.land/x/hono@v4.3.7/mod.ts",
-    "@hono/middleware": "https://deno.land/x/hono@v4.3.7/middleware.ts",
-    "@hono/http-exception": "https://deno.land/x/hono@v4.3.7/http-exception.ts",
+    "@hono": "jsr:@hono/hono@^4.4.6",
     "@dotenv": "https://deno.land/std@0.224.0/dotenv/mod.ts"
   }
 }

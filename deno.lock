@@ -4,6 +4,7 @@
     "specifiers": {
       "jsr:@czechitas/restful-collections@^0.2.0": "jsr:@czechitas/restful-collections@0.2.0",
       "jsr:@hono/hono@^4.4.0": "jsr:@hono/hono@4.4.6",
+      "jsr:@hono/hono@^4.4.6": "jsr:@hono/hono@4.4.6",
       "jsr:@std/ulid@^0.224.1": "jsr:@std/ulid@0.224.1",
       "npm:@types/node": "npm:@types/node@18.16.19"
     },
@@ -117,7 +118,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@czechitas/restful-collections@^0.2.0"
+      "jsr:@czechitas/restful-collections@^0.2.0",
+      "jsr:@hono/hono@^4.4.6"
     ],
     "packageJson": {
       "dependencies": [

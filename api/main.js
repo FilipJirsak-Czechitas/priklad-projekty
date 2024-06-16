@@ -1,5 +1,6 @@
 import { Hono } from "@hono";
-import { cors, serveStatic } from "@hono/middleware";
+import { cors } from "@hono/cors";
+import { serveStatic } from "@hono/deno";
 import { load } from "@dotenv";
 import { createCollections } from "@czechitas/restful-collections";
 
